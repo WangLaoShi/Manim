@@ -1,0 +1,4 @@
+.venv/
+.idea/
+images/*.png
+videos/*.mp4
