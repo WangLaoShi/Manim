@@ -1,6 +1,6 @@
 from manimlib import *
 
-class SquareToCircle(Scene):
+class SquareToCircleEmbed(Scene):
     def construct(self):
         circle = Circle()
         circle.set_fill(BLUE, opacity=0.5)

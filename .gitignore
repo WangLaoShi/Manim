@@ -2,3 +2,4 @@
 .idea/
 images/*.png
 videos/*.mp4
+manim_venv/

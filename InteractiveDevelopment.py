@@ -27,13 +27,14 @@ class InteractiveDevelopment(Scene):
         """)
         self.play(Write(text))
 
-        # 在交互终端中，你可以使用play, add, remove, clear, wait, save_state
-        # 和restore来代替self.play, self.add, self.remove……
+        # 在交互终端中，你可以使用 play, add, remove, clear, wait, save_state
+        # 和 restore 来代替self.play, self.add, self.remove……
 
         # 这时如果要使用鼠标键盘来与窗口互动，需要输入执行touch()
-        # 然后你就可以滚动窗口，或者在按住z时滚动来缩放
-        # 按住d时移动鼠标来更改相机视角，按r重置相机位置
-        # 按q退出和窗口的交互来继续输入其他代码
+        # 然后你就可以滚动窗口，或者在按住 z 时滚动来缩放
+        # 按住 d 时移动鼠标来更改相机视角，
+        # 按 r 重置相机位置
+        # 按 q 退出和窗口的交互来继续输入其他代码
 
         # 特别的，你可以自定一个场景来和鼠标和键盘互动
         always(circle.move_to, self.mouse_point)
