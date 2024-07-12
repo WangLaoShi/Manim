@@ -1,2 +1,4 @@
 manimgl
 numpy==1.24
+pypandoc
+nbformat
