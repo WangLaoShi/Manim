@@ -9,6 +9,8 @@ class MathTex(Scene):
         solar_day = dt.strftime('%Y年%m月%d日')
         print(solar_day)
         text_solar_day = Title(solar_day, include_underline=False)
+        text_solar_day_CN = Text(solar_day)
+        text_solar_day_CN.move_to(DL)
         text_solar_day.move_to(DR)
         # tex1 = Tex(r"$\int_a^b f'(x) dx = f(b)- f(a)$")  # r表示raw string
         tex1 = Tex(r"\int_a^b f'(x) dx = f(b)- f(a)")  # r表示raw string
@@ -23,4 +25,12 @@ class MathTex(Scene):
         equation.set_color_by_tex("x", YELLOW)
         tex3.to_edge(DOWN)
         equation.to_edge(UL)
-        self.add(text_solar_day,tex1,tex3,equation)
+        self.add(text_solar_day,text_solar_day_CN,tex1,tex3,equation)
+
+        default_font = 'Microsoft YaHei UI'
+        default_font_size = 24
+
+        s = '一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十'
+
+        text = Text(s[:40], font=default_font, font_size=default_font_size)
+        self.add(text)

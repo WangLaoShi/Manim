@@ -22,7 +22,7 @@ style:
 tex:
   executable: latex
   intermediate_filetype: dvi
-  template_file: tex_template.tex
+  template_file: ctex_template.tex
   text_to_replace: '[tex_expression]'
 universal_import_line: from manimlib import *
 window_monitor: 0
